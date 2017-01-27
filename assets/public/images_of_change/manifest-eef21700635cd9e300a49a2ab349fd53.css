@@ -1,0 +1,3283 @@
+/* 
+*   _manifest 
+*
+*
+*/
+/*@import "vendor/twentytwenty/foundation";
+*/
+/*
+*   _variables
+*
+*   
+*/
+/* Screen size / Breakpoints */
+/*
+*   _mixins
+*
+*   
+*/
+/* Calculatation for heading sizes at different breakpoints */
+/* UI sprite-based button */
+/*
+*   _utils
+*
+*   Generic mixins and placeholders
+*
+*/
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 13, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+/* line 21, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+body {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 32, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 37, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 46, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+/* line 60, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 71, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 81, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+/* line 89, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 124, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+/* line 132, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 143, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 152, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 168, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 182, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 198, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+.clearfix:before, #info_panel:before, .modal > section:before, .grid_gallery .slide:before,
+.clearfix:after,
+#info_panel:after,
+.modal > section:after,
+.grid_gallery .slide:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 204, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+.clearfix:after, #info_panel:after, .modal > section:after, .grid_gallery .slide:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 213, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+.clearfix, #info_panel, .modal > section, .grid_gallery .slide {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 240, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 247, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 252, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 256, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 264, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 270, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 276, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 280, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 285, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+  /* line 293, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 300, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/boilerplate.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/* ----- MB BOILERPLATE ----- */
+/* Modify styles directly from the html5 boilerplate, which we leave intact */
+/* line 6, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mb_boilerplate.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+/* ----- MB custom styles ----- */
+/* line 19, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mb_boilerplate.scss */
+body {
+  margin: 0;
+}
+@media screen and (min-width: 600px) {
+  /* line 19, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mb_boilerplate.scss */
+  body {
+    font-size: 98%;
+  }
+}
+@media screen and (min-width: 769px) {
+  /* line 19, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mb_boilerplate.scss */
+  body {
+    font-size: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 19, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mb_boilerplate.scss */
+  body {
+    font-size: 102%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 19, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mb_boilerplate.scss */
+  body {
+    font-size: 104%;
+  }
+}
+
+/* line 29, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mb_boilerplate.scss */
+body, select, input {
+  font: 100%/1.4 Helvetica, Arial, sans-serif;
+}
+
+/* line 9, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_utils.scss */
+::-webkit-input-placeholder {
+  font: 100%/1.4 Helvetica, Arial, sans-serif;
+}
+
+/* line 10, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_utils.scss */
+:-moz-placeholder {
+  font: 100%/1.4 Helvetica, Arial, sans-serif;
+}
+
+/* line 11, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_utils.scss */
+::-moz-placeholder {
+  font: 100%/1.4 Helvetica, Arial, sans-serif;
+}
+
+/* line 12, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_utils.scss */
+:-ms-input-placeholder {
+  font: 100%/1.4 Helvetica, Arial, sans-serif;
+}
+
+/* line 36, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mb_boilerplate.scss */
+.browsehappy {
+  background: white;
+  color: #333;
+  padding: 1em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+}
+
+/* remove highlighting for clickable divs on android devices (requires Modernizr) */
+/* line 50, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mb_boilerplate.scss */
+html.touch.-webkit- {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* apply a natural box layout model to all elements */
+/* line 55, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mb_boilerplate.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 9, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_utils.scss */
+::-webkit-input-placeholder {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 10, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_utils.scss */
+:-moz-placeholder {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 11, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_utils.scss */
+::-moz-placeholder {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 12, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_utils.scss */
+:-ms-input-placeholder {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* 
+ * _global
+ * 
+ *
+*/
+/* font optmization/smoothing */
+/* line 10, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+html, html a, select, input, button {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 15, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+html.no-touchevents {
+  text-rendering: optimizeLegibility;
+}
+/* line 17, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+html.no-touchevents html a, html.no-touchevents select, html.no-touchevents input, html.no-touchevents button {
+  text-rendering: optimizeLegibility;
+}
+
+/* line 9, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_utils.scss */
+input ::-webkit-input-placeholder, textarea ::-webkit-input-placeholder {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+/* line 10, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_utils.scss */
+input :-moz-placeholder, textarea :-moz-placeholder {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+/* line 11, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_utils.scss */
+input ::-moz-placeholder, textarea ::-moz-placeholder {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+/* line 12, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_utils.scss */
+input :-ms-input-placeholder, textarea :-ms-input-placeholder {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 30, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 35, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+body {
+  background-color: #18191a;
+  color: #e6e6e6;
+  height: 100%;
+}
+/* line 41, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+body > embed {
+  visibility: hidden;
+}
+
+/* line 46, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+a {
+  color: #585858;
+}
+/* line 48, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+a:hover {
+  color: white;
+}
+
+/* line 53, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+h1, h2, h3, h4, h5 {
+  color: white;
+  margin: 1.5em 0 .5em;
+}
+
+/* line 58, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+h1 {
+  letter-spacing: -.04em;
+}
+
+/* line 62, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+h2 {
+  letter-spacing: -.03em;
+}
+
+/* line 66, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+h3 {
+  letter-spacing: -.02em;
+}
+
+/* line 70, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+h4 {
+  letter-spacing: -.01em;
+}
+
+/* line 74, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+dl, menu, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 81, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+nav ul, form ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 88, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+ul.articles {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 96, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+.col {
+  float: left;
+  height: 100%;
+}
+
+/* line 101, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+.grid_layout {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+@media screen and (min-width: 600px) {
+  /* line 101, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+  .grid_layout {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 769px) {
+  /* line 101, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+  .grid_layout {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 101, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+  .grid_layout {
+    max-width: 1200px;
+    width: 97%;
+  }
+  /* line 116, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+  .content_page .grid_layout {
+    width: 90%;
+  }
+}
+
+/* line 122, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+.icon {
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+/* line 127, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+.rotate_warning {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  z-index: 40;
+  text-align: center;
+}
+@media only screen and (orientation: landscape) {
+  /* line 127, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+  .rotate_warning {
+    display: none !important;
+  }
+}
+/* line 141, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_global.scss */
+.rotate_warning p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*
+// an experiment
+@media only screen and (orientation:portrait){
+  body {  
+    //height: 100vw;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+@media only screen and (orientation:landscape){
+  body {  
+     -webkit-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+     -o-transform: rotate(0deg);
+     -ms-transform: rotate(0deg);
+     transform: rotate(0deg);
+  }
+}
+*/
+/* 
+ * _button
+ * 
+ *
+*/
+/* line 7, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_button.scss */
+.button, .inline_button {
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  text-align: center;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #e0eaf1;
+  padding: 14px 20px;
+  line-height: 1em;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+  font-size: .9em;
+  font-weight: 600;
+}
+
+/* line 23, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_button.scss */
+.button, .inline_button {
+  background-color: black;
+}
+/* line 26, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_button.scss */
+.button:hover, .inline_button:hover {
+  background-color: #6392b9;
+  color: white;
+}
+
+/* multiple side by side buttons */
+/* line 33, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_button.scss */
+.inline_button {
+  display: inline-block;
+}
+
+/* line 38, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_button.scss */
+.inline_button + .inline_button {
+  margin-left: 12px;
+}
+
+/* line 42, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_button.scss */
+.secondary_button {
+  background-color: #46545f;
+}
+/* line 44, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_button.scss */
+.secondary_button:hover {
+  background-color: #5b6974;
+}
+
+/* Regular button that includes an icon the left of some text */
+/* UI button */
+/* UI sprite-based button */
+/* UI sprite-based button */
+/* Close panel button */
+/*
+
+@mixin close_panel_ui_button ($posTop: .4em, $posRight: .5em) {
+  position: absolute;
+  top: $posTop;
+  right: $posRight;
+  @include ioc_ui_button(25px, 25px, -25px, -25px, -25px, -25px, .8em);
+  &:hover {
+    color: white;
+  }
+}
+*/
+/* line 3, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_arrows.scss */
+.up_arrow_tab {
+  top: -40px;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: black;
+  border-width: 20px;
+  margin-left: -20px;
+}
+
+/*~~~~~~~~~~~~~~ global styles ~~~~~~~~~ */
+/* line 3, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layout.scss */
+.chromeless #site_header, .chromeless #ioc_footer, .chromeless #info_panel {
+  display: none;
+}
+/* line 7, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layout.scss */
+.chromeless #layers .image_detail_view {
+  height: 100%;
+  margin-top: auto;
+  padding-top: 0;
+}
+/* line 12, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layout.scss */
+.chromeless #layers .image_height_wrapper {
+  height: 100%;
+}
+
+/*
+*   _site_header
+*
+*   
+*/
+/* line 7, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_site_header.scss */
+#site_header {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  position: absolute;
+  padding: 0.4em 0.6em 0.4em 0.4em;
+  z-index: 20;
+  height: 57px;
+}
+@media screen and (min-width: 480px) {
+  /* line 7, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_site_header.scss */
+  #site_header {
+    padding: 0.5em 0.9em 0.4em 0.4em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 7, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_site_header.scss */
+  #site_header {
+    height: 80px;
+    padding: .7em 1em;
+  }
+}
+@media screen and (min-width: 769px) {
+  /* line 7, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_site_header.scss */
+  #site_header {
+    background-color: #18191a;
+  }
+}
+/* line 25, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_site_header.scss */
+body.fullscreen #site_header {
+  background-color: transparent;
+}
+/* line 29, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_site_header.scss */
+#site_header .brand_area {
+  height: 100%;
+  display: inline-block;
+}
+/* line 36, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_site_header.scss */
+#site_header .brand_1 {
+  background: url("/assets/images_of_change/nasa_logo@2x.png") no-repeat;
+  background-size: 100%;
+  background-position: center;
+  height: 45px;
+  float: left;
+  height: 100%;
+  width: 40px;
+}
+@media screen and (min-width: 480px) {
+  /* line 36, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_site_header.scss */
+  #site_header .brand_1 {
+    width: 48px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 36, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_site_header.scss */
+  #site_header .brand_1 {
+    width: 64px;
+  }
+}
+/* line 52, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_site_header.scss */
+#site_header .brand_1 a.nasa_logo {
+  display: block;
+  height: 100%;
+  text-indent: -9999px;
+}
+/* line 58, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_site_header.scss */
+#site_header .brand_2 {
+  position: relative;
+  height: 100%;
+  background: url("/assets/images_of_change/ioc_logo@2x.png") no-repeat;
+  background-size: 100%;
+  background-position: center;
+  left: 45px;
+  width: 176px;
+}
+@media screen and (min-width: 480px) {
+  /* line 58, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_site_header.scss */
+  #site_header .brand_2 {
+    left: 54px;
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 58, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_site_header.scss */
+  #site_header .brand_2 {
+    left: 72px;
+    width: 290px;
+  }
+}
+/* line 74, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_site_header.scss */
+#site_header .brand_2 a.brand_logo {
+  margin: 0;
+  text-indent: -9999px;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* line 82, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_site_header.scss */
+#site_header .view_selectors {
+  height: 100%;
+  padding: 3px;
+}
+@media screen and (min-width: 1024px) {
+  /* line 82, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_site_header.scss */
+  #site_header .view_selectors {
+    padding: 10px;
+  }
+}
+/* line 89, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_site_header.scss */
+#site_header .view_selector {
+  display: inline-block;
+  text-indent: -9999px;
+}
+/* line 93, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_site_header.scss */
+#site_header .map_icon {
+  vertical-align: middle;
+  padding: 0;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: url("/assets/images_of_change/ui_sprite@2x.png") -80px -156px;
+  background-size: 300px;
+}
+/* line 101, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mixins.scss */
+.no-touchevents #site_header .map_icon:hover, #site_header .map_icon.active {
+  background: url("/assets/images_of_change/ui_sprite@2x.png") -80px -106px;
+  background-size: 300px;
+}
+/* line 98, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_site_header.scss */
+#site_header .grid_icon {
+  margin-left: 12px;
+  vertical-align: middle;
+  padding: 0;
+  cursor: pointer;
+  width: 23px;
+  height: 23px;
+  background: url("/assets/images_of_change/ui_sprite@2x.png") 0 -25px;
+  background-size: 300px;
+}
+@media screen and (min-width: 480px) {
+  /* line 98, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_site_header.scss */
+  #site_header .grid_icon {
+    margin-left: 25px;
+  }
+}
+/* line 101, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mixins.scss */
+.no-touchevents #site_header .grid_icon:hover, #site_header .grid_icon.active {
+  background: url("/assets/images_of_change/ui_sprite@2x.png") 0 0;
+  background-size: 300px;
+}
+
+/* 
+*   ioc footer
+*
+*
+*/
+/* line 7, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_footer.scss */
+#ioc_footer {
+  display: block;
+  bottom: 0;
+  width: 100%;
+  color: #585858;
+  height: 30px;
+  position: fixed;
+  z-index: 100;
+  background-color: black;
+  text-align: center;
+}
+@media screen and (orientation: landscape) {
+  /* line 7, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_footer.scss */
+  #ioc_footer {
+    display: none;
+  }
+}
+@media screen and (orientation: landscape) and (min-width: 1024px) {
+  /* line 7, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_footer.scss */
+  #ioc_footer {
+    display: block;
+  }
+}
+
+/* line 23, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_footer.scss */
+body.fullscreen #ioc_footer {
+  display: none;
+}
+/* line 26, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_footer.scss */
+#ioc_footer nav > a {
+  text-align: left;
+  display: inline-block;
+  text-decoration: none;
+  color: #585858;
+  padding: 7px 4px;
+  font-size: 0.6em;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+/* line 36, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_footer.scss */
+#ioc_footer nav > a:hover {
+  color: white;
+}
+@media screen and (min-width: 480px) {
+  /* line 26, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_footer.scss */
+  #ioc_footer nav > a {
+    padding: 7px 11px;
+    font-size: 0.75em;
+  }
+}
+
+/*
+*   info panel
+*
+*   
+*/
+/* line 8, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  padding: .6em 0 .2em;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+@media screen and (min-width: 769px) {
+  /* line 8, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel {
+    padding: 1.2em 0 1em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 8, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel {
+    background-color: #18191a;
+    padding-bottom: 3em;
+  }
+  /* line 27, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  body.fullscreen #info_panel {
+    padding-bottom: 1em;
+  }
+}
+@media screen and (orientation: portrait) {
+  /* line 8, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel {
+    padding-bottom: .5em;
+  }
+}
+@media screen and (orientation: portrait) and (min-width: 480px) {
+  /* line 8, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel {
+    padding-bottom: 1.65em;
+  }
+}
+@media screen and (orientation: portrait) and (min-width: 600px) {
+  /* line 8, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel {
+    padding-bottom: 2.2em;
+  }
+}
+@media screen and (orientation: portrait) and (min-width: 769px) {
+  /* line 8, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel {
+    padding-bottom: 2.5em;
+  }
+}
+
+/* line 47, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+.touch #info_panel {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+/* line 51, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .grid_layout {
+  max-width: none;
+}
+@media screen and (min-width: 769px) {
+  /* line 51, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel .grid_layout {
+    width: 85%;
+  }
+}
+/* line 59, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .left_section, #info_panel .right_section {
+  display: inline-block;
+  vertical-align: bottom;
+}
+/* line 63, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .left_section {
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  /* line 63, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel .left_section {
+    width: 50%;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 63, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel .left_section {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 769px) {
+  /* line 63, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel .left_section {
+    width: 65%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 63, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel .left_section {
+    width: 60%;
+  }
+}
+/* line 80, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .right_section {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+@media screen and (min-width: 480px) {
+  /* line 80, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel .right_section {
+    float: right;
+    width: 50%;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 80, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel .right_section {
+    width: 40%;
+    padding-top: .2em;
+  }
+}
+@media screen and (min-width: 769px) {
+  /* line 80, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel .right_section {
+    width: 35%;
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 80, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel .right_section {
+    width: 40%;
+  }
+}
+/* line 104, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .view_options {
+  text-align: center;
+}
+@media screen and (min-width: 480px) {
+  /* line 104, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel .view_options {
+    padding-left: 0px;
+    margin: 0px;
+    float: right;
+  }
+}
+/* line 113, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .ui_button {
+  height: 55px;
+  display: inline-block;
+  width: 50px;
+  vertical-align: top;
+  margin-right: 2px;
+}
+/* line 119, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .ui_button:last-child {
+  margin-right: 0px;
+}
+/* line 124, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .ui_button#fullscreen {
+  margin-left: 8px;
+  border-left: 1px solid #737577;
+  display: inline-block;
+  height: 34px;
+}
+@media screen and (min-width: 1024px) {
+  /* line 124, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel .ui_button#fullscreen {
+    height: 55px;
+  }
+}
+/* line 132, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+.motanf #info_panel .ui_button#fullscreen {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  /* line 132, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  .motanf #info_panel .ui_button#fullscreen {
+    display: inline-block;
+  }
+}
+/* line 141, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel #curtain_view {
+  padding: 0;
+  cursor: pointer;
+  width: 50px;
+  height: 40px;
+  background: url("/assets/images_of_change/ui_sprite@2x.png") -75px -225px;
+  background-size: 300px;
+}
+/* line 101, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mixins.scss */
+.no-touchevents #info_panel #curtain_view:hover, #info_panel #curtain_view.active {
+  background: url("/assets/images_of_change/ui_sprite@2x.png") 0 -225px;
+  background-size: 300px;
+}
+/* line 143, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel #curtain_view.active {
+  padding: 0;
+  cursor: pointer;
+  width: 50px;
+  height: 40px;
+  background: url("/assets/images_of_change/ui_sprite@2x.png") 0 -225px;
+  background-size: 300px;
+}
+/* line 101, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mixins.scss */
+.no-touchevents #info_panel #curtain_view.active:hover, #info_panel #curtain_view.active.active {
+  background: url("/assets/images_of_change/ui_sprite@2x.png") 0 -225px;
+  background-size: 300px;
+}
+/* line 148, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel #toggle_view {
+  padding: 0;
+  cursor: pointer;
+  width: 50px;
+  height: 40px;
+  background: url("/assets/images_of_change/ui_sprite@2x.png") -150px -225px;
+  background-size: 300px;
+}
+/* line 101, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mixins.scss */
+.no-touchevents #info_panel #toggle_view:hover, #info_panel #toggle_view.active {
+  background: url("/assets/images_of_change/ui_sprite@2x.png") -225px -225px;
+  background-size: 300px;
+}
+/* line 150, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel #toggle_view.active {
+  padding: 0;
+  cursor: pointer;
+  width: 50px;
+  height: 40px;
+  background: url("/assets/images_of_change/ui_sprite@2x.png") -225px -225px;
+  background-size: 300px;
+}
+/* line 101, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mixins.scss */
+.no-touchevents #info_panel #toggle_view.active:hover, #info_panel #toggle_view.active.active {
+  background: url("/assets/images_of_change/ui_sprite@2x.png") -225px -225px;
+  background-size: 300px;
+}
+/* line 155, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel #two_up_view {
+  padding: 0;
+  cursor: pointer;
+  width: 50px;
+  height: 40px;
+  background: url("/assets/images_of_change/ui_sprite@2x.png") -150px -125px;
+  background-size: 300px;
+}
+/* line 101, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mixins.scss */
+.no-touchevents #info_panel #two_up_view:hover, #info_panel #two_up_view.active {
+  background: url("/assets/images_of_change/ui_sprite@2x.png") -225px -125px;
+  background-size: 300px;
+}
+/* line 157, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel #two_up_view.active {
+  padding: 0;
+  cursor: pointer;
+  width: 50px;
+  height: 40px;
+  background: url("/assets/images_of_change/ui_sprite@2x.png") -225px -125px;
+  background-size: 300px;
+}
+/* line 101, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mixins.scss */
+.no-touchevents #info_panel #two_up_view.active:hover, #info_panel #two_up_view.active.active {
+  background: url("/assets/images_of_change/ui_sprite@2x.png") -225px -125px;
+  background-size: 300px;
+}
+@media screen and (min-width: 769px) {
+  /* line 162, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel #curtain_view, #info_panel #toggle_view, #info_panel #two_up_view {
+    height: 55px;
+  }
+  /* line 165, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel #curtain_view.active, #info_panel #toggle_view.active, #info_panel #two_up_view.active {
+    height: 55px;
+  }
+}
+/* line 171, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel #fullscreen .icon {
+  padding: 0;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background: url("/assets/images_of_change/ui_sprite@2x.png") 0px -75px;
+  background-size: 300px;
+  margin-left: 14px;
+  margin-top: 5px;
+}
+/* line 101, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mixins.scss */
+.no-touchevents #info_panel #fullscreen .icon:hover, #info_panel #fullscreen .icon.active {
+  background: url("/assets/images_of_change/ui_sprite@2x.png") 0px -50px;
+  background-size: 300px;
+}
+@media screen and (min-width: 769px) {
+  /* line 171, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel #fullscreen .icon {
+    margin-top: 14px;
+  }
+}
+/* line 179, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+body.fullscreen #info_panel #fullscreen .icon {
+  padding: 0;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background: url("/assets/images_of_change/ui_sprite@2x.png") 0px -125px;
+  background-size: 300px;
+}
+/* line 101, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mixins.scss */
+.no-touchevents body.fullscreen #info_panel #fullscreen .icon:hover, body.fullscreen #info_panel #fullscreen .icon.active {
+  background: url("/assets/images_of_change/ui_sprite@2x.png") 0px -100px;
+  background-size: 300px;
+}
+/* line 183, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel h1.image_title {
+  font-weight: 200;
+  margin: 0;
+  font-size: 1.1em;
+}
+@media screen and (min-width: 480px) {
+  /* line 183, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel h1.image_title {
+    max-width: 183px;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 183, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel h1.image_title {
+    max-width: none;
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 183, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel h1.image_title {
+    font-size: 1.5em;
+  }
+}
+/* line 198, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel h3.date {
+  color: #737577;
+  font-size: .75em;
+  margin: 2px 0 .8em;
+  margin-top: 2px;
+}
+@media screen and (min-width: 480px) {
+  /* line 198, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel h3.date {
+    font-size: .8em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 198, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel h3.date {
+    font-size: .9em;
+  }
+}
+/* line 211, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .download_links {
+  color: #909090;
+}
+/* line 213, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .download_links a {
+  color: #0E7EE0;
+  display: inline-block;
+  margin-left: .3em;
+  margin-right: .2em;
+  text-decoration: none;
+}
+/* line 219, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .download_links a:hover {
+  color: #3BA0F9;
+}
+/* line 222, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .download_links a:last-child {
+  margin-right: 0;
+}
+/* line 228, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .caret {
+  padding: 0;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background: url("/assets/images_of_change/ui_sprite@2x.png") 212px -62px;
+  background-size: 300px;
+  margin-left: .7em;
+  position: relative;
+  transform: rotate(180deg);
+  position: absolute;
+  right: .8em;
+  top: .6em;
+  bottom: -0.5em;
+}
+/* line 101, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mixins.scss */
+.no-touchevents #info_panel .caret:hover, #info_panel .caret.active {
+  background: url("/assets/images_of_change/ui_sprite@2x.png") 212px -62px;
+  background-size: 300px;
+}
+@media screen and (min-width: 480px) {
+  /* line 228, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel .caret {
+    position: relative;
+    right: auto;
+    top: auto;
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 769px) {
+  /* line 228, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel .caret {
+    bottom: -0.4em;
+  }
+}
+/* line 249, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .info_toggle {
+  text-align: center;
+  cursor: pointer;
+}
+@media screen and (min-width: 480px) {
+  /* line 249, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel .info_toggle {
+    text-align: left;
+  }
+}
+/* line 255, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .info_toggle .title_container {
+  max-width: 85%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  /* line 255, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel .info_toggle .title_container {
+    max-width: none;
+    margin: 0;
+  }
+}
+/* line 263, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .info_toggle h1 {
+  display: inline-block;
+}
+/* line 270, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .full_info {
+  display: none;
+}
+/* line 275, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .mini_view_container {
+  display: none;
+  width: 100px;
+  position: absolute;
+  bottom: 110px;
+  right: 0;
+}
+@media screen and (min-width: 480px) {
+  /* line 275, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel .mini_view_container {
+    bottom: 56px;
+    right: 94px;
+  }
+}
+@media screen and (min-width: 480px) {
+  /* line 286, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  .motanf #info_panel .mini_view_container {
+    right: 34px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 286, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  .motanf #info_panel .mini_view_container {
+    right: 94px;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 275, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel .mini_view_container {
+    bottom: 60px;
+  }
+}
+@media screen and (min-width: 769px) {
+  /* line 275, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel .mini_view_container {
+    bottom: 84px;
+  }
+}
+/* line 301, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .mini_view {
+  position: relative;
+  float: right;
+  z-index: 2;
+  height: auto;
+  background-color: #000;
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 313, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel a.minimize_btn {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  float: right;
+  text-align: center;
+  background: #000;
+  cursor: pointer;
+}
+/* line 323, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel a.minimize_btn::after {
+  content: "-";
+}
+/* line 326, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel a.minimize_btn.minimized::after {
+  content: "+";
+}
+/* line 331, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .mini_before, #info_panel .mini_after {
+  display: inline-block;
+  width: 48%;
+  height: 100%;
+  overflow: hidden;
+  margin: auto;
+  text-align: left;
+  float: left;
+}
+/* line 340, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .mini_before .image_thumb, #info_panel .mini_after .image_thumb {
+  max-height: 110px;
+  overflow: hidden;
+}
+/* line 344, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .mini_before img, #info_panel .mini_after img {
+  width: 100%;
+}
+/* line 348, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .mini_before p, #info_panel .mini_after p {
+  font-size: 12px;
+  font-weight: bold;
+  color: #aaa;
+  margin-top: 7px;
+}
+/* line 356, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .mini_before.inactive p, #info_panel .mini_after.inactive p {
+  color: #666;
+}
+/* line 357, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .mini_before.inactive img, #info_panel .mini_after.inactive img {
+  opacity: 0.6;
+}
+/* line 361, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .mini_before:hover p, #info_panel .mini_after:hover p {
+  color: #fff;
+}
+/* line 366, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .mini_after {
+  margin-left: 4%;
+}
+/* line 370, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .minimap_container {
+  cursor: pointer;
+  display: none;
+}
+/* line 373, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .minimap_container .minimap {
+  background-color: #99c;
+  height: 110px;
+  width: 110px;
+}
+/* line 382, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel .close_button {
+  display: none;
+}
+/* line 386, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel.open {
+  background: rgba(0, 0, 0, 0.9);
+  max-height: 80%;
+  /*
+      .panel_close_button {
+        @include ioc_ui_button (25px,25px,-25px,0px,-25px,-25px);
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+  */
+}
+@media screen and (min-width: 769px) {
+  /* line 386, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel.open {
+    max-height: 85%;
+  }
+}
+/* line 396, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel.open .left_section {
+  width: 100%;
+  text-align: left;
+}
+@media screen and (min-width: 600px) {
+  /* line 396, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel.open .left_section {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 769px) {
+  /* line 396, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel.open .left_section {
+    width: 65%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 396, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel.open .left_section {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 396, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel.open .left_section {
+    width: 55%;
+  }
+}
+/* line 412, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel.open .right_section {
+  float: right;
+  margin-bottom: 0;
+  width: 45%;
+}
+@media screen and (min-width: 600px) {
+  /* line 412, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel.open .right_section {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 769px) {
+  /* line 412, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel.open .right_section {
+    width: 35%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 412, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel.open .right_section {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 412, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel.open .right_section {
+    width: 35%;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 429, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel.open a.info_toggle {
+    text-align: left;
+  }
+}
+/* line 434, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel.open .mini_view_container {
+  display: none !important;
+}
+/* line 437, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel.open .caret {
+  transform: rotate(0deg);
+}
+/* line 440, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel.open .full_info {
+  max-height: 400px;
+  overflow-y: scroll;
+  /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+  padding: 0 1em 17em 0;
+}
+/* line 445, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel.open .full_info p:first-child {
+  margin-top: 0;
+}
+/* line 449, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel.open .full_info .credits, #info_panel.open .full_info .credits a {
+  color: #909090;
+  font-size: .9em;
+}
+@media screen and (min-width: 480px) {
+  /* line 440, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel.open .full_info {
+    padding-bottom: 19em;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 440, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel.open .full_info {
+    padding-bottom: 6em;
+    max-height: 280px;
+    padding-right: 2em;
+  }
+}
+@media screen and (min-width: 769px) {
+  /* line 440, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel.open .full_info {
+    max-height: 300px;
+    padding-right: 3em;
+  }
+}
+@media screen and (large) {
+  /* line 440, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel.open .full_info {
+    max-height: 400px;
+    margin-right: 10px;
+  }
+}
+/* line 471, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel.open .full_info::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 10px;
+  background-color: #1C1C1C;
+}
+/* line 480, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel.open .full_info::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.5);
+}
+/* line 486, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel.open .minimap_container {
+  border: 1px solid #525252;
+  padding: 10px;
+  float: right;
+  position: relative;
+  visibility: hidden;
+  width: 90%;
+  height: 0;
+  margin-top: 10px;
+}
+@media screen and (min-width: 600px) {
+  /* line 486, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel.open .minimap_container {
+    visibility: visible;
+    height: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  /* line 486, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel.open .minimap_container {
+    padding: 14px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 486, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel.open .minimap_container {
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 486, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel.open .minimap_container {
+    padding: 35px;
+  }
+}
+/* line 508, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+#info_panel.open .minimap_container .minimap {
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  /* line 508, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel.open .minimap_container .minimap {
+    height: 140px;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 508, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel.open .minimap_container .minimap {
+    height: 140px;
+  }
+}
+@media screen and (min-width: 769px) {
+  /* line 508, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel.open .minimap_container .minimap {
+    height: 190px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 508, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel.open .minimap_container .minimap {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 508, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+  #info_panel.open .minimap_container .minimap {
+    height: 260px;
+  }
+}
+/* line 540, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_info_panel.scss */
+body.fullscreen #info_panel {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/*
+*   _layers
+*  The center viewport area, contains maps, grids, etc.
+*   
+*/
+/* line 12, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+.zoomable .twentytwenty-wrapper {
+  overflow: visible !important;
+}
+/* line 15, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+.zoomable .nav_arrows, .zoomable .gradient_container_top {
+  display: none !important;
+}
+/* line 18, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+.zoomable .image_tools {
+  top: 10px !important;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* line 25, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+/* line 32, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .image_detail_view {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+@media screen and (min-width: 769px) {
+  /* line 32, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+  #layers .image_detail_view {
+    height: calc(100% - 57px);
+    margin-top: 57px;
+    padding-top: 100px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 32, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+  #layers .image_detail_view {
+    height: calc(100% - 80px);
+    margin-top: 80px;
+  }
+}
+/* line 49, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+body.fullscreen #layers .image_detail_view {
+  height: 100%;
+  margin-top: 0;
+}
+/* line 56, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .image_height_wrapper {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  /* line 56, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+  #layers .image_height_wrapper {
+    height: calc(100% - 110px);
+  }
+}
+/* line 65, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+body.fullscreen #layers .image_height_wrapper {
+  height: 100%;
+  padding: 0;
+}
+/* line 71, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .image_tools {
+  display: block;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  width: 40px;
+  height: 37px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 0;
+  top: 17%;
+  z-index: 2;
+}
+/* line 85, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+.chromeless #layers .image_tools {
+  display: none;
+}
+/* line 89, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+.chromeless.zoomable #layers .image_tools {
+  display: block;
+}
+@media screen and (min-width: 600px) {
+  /* line 71, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+  #layers .image_tools {
+    right: 0;
+    top: 17%;
+    width: 48px;
+    height: 46px;
+  }
+}
+/* line 99, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+.no-touchevents #layers .image_tools {
+  display: none;
+}
+/* line 103, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .image_tools.zoom:after, #layers .image_tools:after {
+  content: '';
+  padding: 0;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  left: 9px;
+  top: 9px;
+  border: none;
+  opacity: .8;
+  position: absolute;
+}
+@media screen and (min-width: 600px) {
+  /* line 103, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+  #layers .image_tools.zoom:after, #layers .image_tools:after {
+    left: 12px;
+    top: 14px;
+  }
+}
+/* line 120, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .image_tools.zoom:after {
+  background: url("/assets/images_of_change/ui_sprite@2x.png") -25px -100px;
+  background-size: 300px;
+}
+/* line 125, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .image_tools:after {
+  background: url("/assets/images_of_change/ui_sprite@2x.png") -25px -125px;
+  background-size: 300px;
+}
+/* line 129, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+body.fullscreen #layers .image_tools {
+  top: 50px;
+}
+/* line 135, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .image_container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  top: 48%;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+@media screen and (min-width: 769px) {
+  /* line 135, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+  #layers .image_container {
+    width: 85%;
+  }
+}
+/* line 145, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+body.fullscreen #layers .image_container {
+  width: 100%;
+}
+/* line 148, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .image_container #before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 100%;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+/* line 158, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .image_container img {
+  max-width: none;
+  width: 100%;
+}
+/* line 166, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .image_container.curtain_view .twentytwenty-handle {
+  top: 55%;
+}
+@media screen and (min-width: 769px) {
+  /* line 166, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+  #layers .image_container.curtain_view .twentytwenty-handle {
+    top: 45%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 166, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+  #layers .image_container.curtain_view .twentytwenty-handle {
+    top: 50%;
+  }
+  /* line 173, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+  body.fullscreen #layers .image_container.curtain_view .twentytwenty-handle {
+    top: 45%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 178, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+  body.fullscreen #layers .image_container.curtain_view .twentytwenty-handle {
+    top: 46%;
+  }
+}
+/* line 183, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .image_container.curtain_view .twentytwenty-handle.vanish {
+  top: -1000px;
+}
+/* line 222, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .image_container.toggle_view #after_image {
+  width: 100%;
+  display: block;
+}
+/* line 226, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .image_container.toggle_view #before_image {
+  width: 100%;
+  position: relative;
+  display: none;
+}
+/* line 231, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .image_container.toggle_view .twentytwenty-handle {
+  display: none;
+}
+/* line 237, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .image_container.two_up_view #before_image, #layers .image_container.two_up_view #after_image {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(50% - 1px);
+}
+/* line 242, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .image_container.two_up_view #before_image {
+  border-right: 2px solid black;
+  display: block;
+  float: left;
+}
+/* line 247, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .image_container.two_up_view #after_image {
+  display: block;
+  float: right;
+}
+/* line 251, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .image_container.two_up_view .twentytwenty-handle {
+  display: none;
+}
+/* line 259, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers #map_view, #layers #grid_view {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* line 269, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers #map_view .main_overlay_section {
+  height: 100%;
+}
+/* line 271, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers #map_view .main_overlay_section #map_canvas {
+  height: 100%;
+  background-color: #18191a !important;
+}
+/* line 279, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers #full_view .layer, #layers #full_view .layer_map, #layers #grid_view .layer, #layers #grid_view .layer_map {
+  position: absolute;
+  width: 100%;
+}
+/* line 286, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers #grid_view .categories.desktop {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  /* line 286, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+  #layers #grid_view .categories.desktop {
+    display: block;
+  }
+}
+/* line 292, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers #grid_view .categories.mobile {
+  display: block;
+}
+@media screen and (min-width: 1024px) {
+  /* line 292, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+  #layers #grid_view .categories.mobile {
+    display: none;
+  }
+}
+/* line 300, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers #grid_view ul.categories {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  height: 100%;
+}
+/* line 305, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers #grid_view ul.categories li {
+  height: 100%;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 0 0.7em;
+  font-weight: 700;
+  padding: 30px 6px;
+  color: #585858;
+  font-size: .9em;
+}
+@media screen and (min-width: 1200px) {
+  /* line 305, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+  #layers #grid_view ul.categories li {
+    font-size: 1em;
+  }
+}
+/* line 318, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers #grid_view ul.categories li.active, #layers #grid_view ul.categories li:hover {
+  color: #e6e6e6;
+}
+/* line 323, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers #grid_view .grid_gallery {
+  overflow-y: scroll;
+  /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+}
+/* line 327, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers #grid_view .grid_gallery .grid_layout {
+  margin-bottom: 2em;
+}
+/* line 331, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers #grid_view .grid_gallery::-webkit-scrollbar {
+  width: 12px;
+}
+/* line 339, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers #grid_view .grid_gallery::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.4);
+}
+/* line 346, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .nav_arrows {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* line 348, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+.chromeless #layers .nav_arrows {
+  display: none;
+}
+/* line 351, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .nav_arrows .prev_item {
+  left: 0;
+  background: url("/assets/images_of_change/ui_sprite@2x.png") -231px -5px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+@media screen and (min-width: 600px) {
+  /* line 351, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+  #layers .nav_arrows .prev_item {
+    background: url("/assets/images_of_change/ui_sprite@2x.png") -226px 0px;
+  }
+}
+/* line 361, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .nav_arrows .next_item {
+  right: 0;
+  background: url("/assets/images_of_change/ui_sprite@2x.png") -230px -55px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+@media screen and (min-width: 600px) {
+  /* line 361, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+  #layers .nav_arrows .next_item {
+    background: url("/assets/images_of_change/ui_sprite@2x.png") -225px -50px;
+  }
+}
+/* line 371, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .nav_arrows .prev_item, #layers .nav_arrows .next_item {
+  position: absolute;
+  top: calc(48% - 52px);
+  opacity: .6;
+  background-size: 300px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 8;
+}
+@media screen and (min-width: 600px) {
+  /* line 371, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+  #layers .nav_arrows .prev_item, #layers .nav_arrows .next_item {
+    width: 50px;
+    height: 50px;
+    top: calc(46.5% - 25px);
+  }
+}
+/* line 386, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+.no-touchevents #layers .nav_arrows .prev_item:hover, .no-touchevents #layers .nav_arrows .next_item:hover {
+  opacity: 1;
+}
+/* line 389, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .nav_arrows .prev_item.disabled, #layers .nav_arrows .next_item.disabled {
+  cursor: default;
+  opacity: .1;
+}
+/* line 392, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .nav_arrows .prev_item.disabled:hover, #layers .nav_arrows .next_item.disabled:hover {
+  opacity: .1;
+}
+/* line 400, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .mini_view_container.chromeless_toggle {
+  width: 100px;
+  position: absolute;
+  bottom: 8%;
+  right: 5%;
+  background-color: #000;
+}
+/* line 406, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+.chromeless #layers .mini_view_container.chromeless_toggle {
+  z-index: 10;
+}
+/* line 409, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .mini_view_container.chromeless_toggle .mini_view {
+  z-index: 2;
+  height: auto;
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+}
+/* line 418, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .mini_view_container.chromeless_toggle .mini_view .mini_before, #layers .mini_view_container.chromeless_toggle .mini_view .mini_after, #layers .mini_view_container.chromeless_toggle .mini_view .image_thumb {
+  display: inline;
+}
+/* line 421, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .mini_view_container.chromeless_toggle .mini_view img {
+  width: 45%;
+}
+/* line 424, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_layers.scss */
+#layers .mini_view_container.chromeless_toggle .mini_view .inactive img {
+  opacity: 0.6;
+}
+
+/* 
+*   _panels
+*
+*
+*/
+/* line 7, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_panels.scss */
+#panels {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* line 11, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_panels.scss */
+#panels .panel {
+  z-index: 30;
+}
+
+/* 
+*   _overlay
+*
+*
+*/
+/* line 7, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_overlay.scss */
+.overlay {
+  padding: 0 5% 0;
+  background: #191a1a;
+  display: none;
+}
+/* line 11, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_overlay.scss */
+.overlay .close_btn {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+/* line 15, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_overlay.scss */
+.overlay .close_btn .icon {
+  padding: 0;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background: url("/assets/images_of_change/ui_sprite@2x.png") -25px -25px;
+  background-size: 300px;
+}
+/* line 101, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mixins.scss */
+.no-touchevents .overlay .close_btn .icon:hover, .overlay .close_btn .icon.active {
+  background: url("/assets/images_of_change/ui_sprite@2x.png") -25px 0px;
+  background-size: 300px;
+}
+@media screen and (min-width: 1024px) {
+  /* line 11, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_overlay.scss */
+  .overlay .close_btn {
+    right: 23px;
+    top: 28px;
+  }
+}
+/* line 23, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_overlay.scss */
+.overlay h2 {
+  display: block;
+  margin-top: 0;
+  font-size: 1.56em;
+  margin-bottom: 0.25em;
+}
+@media screen and (min-width: 600px) {
+  /* line 23, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_overlay.scss */
+  .overlay h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.45em;
+  }
+}
+@media screen and (min-width: 769px) {
+  /* line 23, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_overlay.scss */
+  .overlay h2 {
+    font-size: 2.04em;
+    margin-bottom: 0.65em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 23, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_overlay.scss */
+  .overlay h2 {
+    font-size: 2.16em;
+    margin-bottom: 0.725em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 23, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_overlay.scss */
+  .overlay h2 {
+    font-size: 2.28em;
+    margin-bottom: 0.8em;
+  }
+}
+
+/* line 30, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_overlay.scss */
+#grid_view.overlay, #map_view.overlay {
+  padding-top: 57px;
+}
+@media screen and (min-width: 1024px) {
+  /* line 30, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_overlay.scss */
+  #grid_view.overlay, #map_view.overlay {
+    padding-top: 80px;
+  }
+}
+
+/* line 39, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_overlay.scss */
+#map_view.overlay {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* 
+*   _modal
+*
+*
+*/
+/* line 7, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_modal.scss */
+.modal {
+  position: relative;
+  background: #191a1a;
+  width: 600px;
+  padding: 3em;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: none;
+  /* Columns */
+}
+/* line 15, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_modal.scss */
+.modal.wide {
+  width: 1080px;
+}
+/* line 18, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_modal.scss */
+.modal#intro_panel {
+  display: block;
+}
+/* line 21, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_modal.scss */
+.modal header {
+  width: 100%;
+}
+/* line 24, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_modal.scss */
+.modal > section {
+  margin-bottom: 2.6em;
+  width: 100%;
+}
+/* line 28, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_modal.scss */
+.modal > section.centered {
+  text-align: center;
+}
+/* line 33, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_modal.scss */
+.modal .col {
+  float: left;
+  width: 50%;
+}
+/* line 37, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_modal.scss */
+.modal .col_1 {
+  padding-right: 4%;
+}
+/* line 40, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_modal.scss */
+.modal .col_2 {
+  padding-left: 4%;
+}
+
+/* line 48, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_modal.scss */
+.simplemodal-container {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  max-width: 525px;
+  transform: translateY(-50%) translateX(-50%);
+  display: none;
+  opacity: .9;
+  padding: 2.2em 1em 2.6em;
+  width: 100% !important;
+}
+@media screen and (min-width: 480px) {
+  /* line 48, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_modal.scss */
+  .simplemodal-container {
+    padding: 2.6em 3.2em 3.6em 3em;
+    width: 90% !important;
+  }
+}
+@media screen and (min-width: 769px) {
+  /* line 48, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_modal.scss */
+  .simplemodal-container {
+    padding: 3.2em 3.2em 3.6em 3.2em;
+    width: 80% !important;
+  }
+}
+/* line 67, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_modal.scss */
+.simplemodal-container h1 {
+  color: black;
+  margin-top: .3em;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+@media screen and (min-width: 480px) {
+  /* line 67, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_modal.scss */
+  .simplemodal-container h1 {
+    font-size: 1.8em;
+  }
+}
+/* line 77, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_modal.scss */
+.simplemodal-container .close_btn {
+  position: absolute;
+  top: .5em;
+  right: .5em;
+  padding: .8em;
+}
+/* line 82, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_modal.scss */
+.simplemodal-container .close_btn .icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  padding: 0;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background: url("/assets/images_of_change/ui_sprite@2x.png") -25px -50px;
+  background-size: 300px;
+}
+/* line 101, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mixins.scss */
+.no-touchevents .simplemodal-container .close_btn .icon:hover, .simplemodal-container .close_btn .icon.active {
+  background: url("/assets/images_of_change/ui_sprite@2x.png") -25px -50px;
+  background-size: 300px;
+}
+
+/*
+*   grid_gallery
+* 
+*   
+*/
+/* line 9, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_grid_gallery.scss */
+.grid_gallery ul.item_list {
+  padding-top: 2em;
+}
+/* line 13, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_grid_gallery.scss */
+.grid_gallery .slide {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+  margin: 1% 1% 5% 1%;
+  opacity: .8;
+}
+@media screen and (min-width: 480px) {
+  /* line 13, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_grid_gallery.scss */
+  .grid_gallery .slide {
+    width: 31%;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 13, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_grid_gallery.scss */
+  .grid_gallery .slide {
+    width: 23%;
+    margin-bottom: 2%;
+  }
+}
+@media screen and (min-width: 769px) {
+  /* line 13, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_grid_gallery.scss */
+  .grid_gallery .slide {
+    width: 18%;
+  }
+}
+/* line 31, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_grid_gallery.scss */
+.grid_gallery .slide img {
+  width: 100%;
+}
+/* line 34, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_grid_gallery.scss */
+.grid_gallery .slide a {
+  text-decoration: none;
+}
+/* line 37, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_grid_gallery.scss */
+.grid_gallery .slide:hover {
+  opacity: 1;
+}
+/* line 41, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_grid_gallery.scss */
+.grid_gallery .list_text_content {
+  text-align: left;
+  margin-top: 0.6em;
+}
+/* line 44, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_grid_gallery.scss */
+.grid_gallery .list_text_content .content_title {
+  color: white;
+  font-size: 1em;
+}
+/* line 48, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_grid_gallery.scss */
+.grid_gallery .list_text_content .subtitle {
+  text-transform: uppercase;
+  font-size: .8em;
+  margin-top: .3em;
+  color: #737577;
+}
+
+/*
+*   _gradient_overlay - public view
+*
+*   Gradient overlays are used to cover part of an image
+*   on carousels and gallery items 
+*
+*/
+/* Gradient Overlays for the carousel and inside pages banner_header_overlay */
+/* line 13, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_gradient_overlay.scss */
+.gradient_container_top {
+  display: block;
+  height: 95px;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.6)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  top: 0;
+}
+@media screen and (min-width: 1024px) {
+  /* line 13, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_gradient_overlay.scss */
+  .gradient_container_top {
+    display: none;
+  }
+}
+/* line 25, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_gradient_overlay.scss */
+body.fullscreen .gradient_container_top {
+  display: block;
+}
+
+/* line 32, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_gradient_overlay.scss */
+.ie9 .gradient_bottom_grid {
+  filter: none;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ4JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+}
+
+/* maps / google map styles
+*
+* 
+*
+*/
+/* line 11, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_maps.scss */
+.gm-style .gm-style-iw {
+  width: 132px !important;
+  top: 12px !important;
+  left: 12px !important;
+  min-height: 155px;
+}
+/* line 16, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_maps.scss */
+.gm-style .gm-style-iw .marker {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+/* line 19, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_maps.scss */
+.gm-style .gm-style-iw .marker a {
+  text-decoration: none;
+}
+/* line 22, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_maps.scss */
+.gm-style .gm-style-iw .marker .title {
+  margin-top: 8px;
+  margin-bottom: 3px;
+  font-size: 15px;
+  text-transform: capitalize;
+  color: #424242;
+  line-height: 1.2em !important;
+}
+/* line 30, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_maps.scss */
+.gm-style .gm-style-iw .marker .subtitle {
+  color: #737577;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+/* line 41, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_maps.scss */
+.mb_infowindow {
+  background-color: white;
+  width: 157px !important;
+  overflow: hidden;
+  border-radius: 4px !important;
+  border-right: 1px solid #848484;
+  border-bottom: 1px solid #848484;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3) !important;
+}
+/* line 49, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_maps.scss */
+.mb_infowindow div {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: transparent !important;
+}
+
+/* line 60, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_maps.scss */
+.mb_infowindow * {
+  width: 100% !important;
+}
+
+/* line 64, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_maps.scss */
+.mb_close {
+  display: none;
+}
+
+/*
+*   _filter_bar - public view
+*   just a search area that contains search input and select / filter elements- rename? 
+*   
+*/
+/* line 9, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+.filter_bar {
+  background-color: black;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 57px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  z-index: 20;
+}
+@media screen and (min-width: 1024px) {
+  /* line 9, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+  .filter_bar {
+    height: 80px;
+  }
+}
+/* line 29, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+.filter_bar select {
+  border-radius: 0 !important;
+  text-transform: capitalize;
+}
+/* line 33, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+.filter_bar .section_search {
+  width: calc(100% - 46px);
+  margin: 0 auto;
+  height: 100%;
+}
+@media screen and (min-width: 1024px) {
+  /* line 33, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+  .filter_bar .section_search {
+    display: block !important;
+  }
+}
+/* line 41, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+.filter_bar.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-box-shadow: 0 4px 4px -1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.15);
+}
+/* line 50, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+.filter_bar .search_binder {
+  width: 39%;
+  display: inline-block;
+  max-width: 304px;
+  position: relative;
+  margin: 0;
+  margin-left: 1%;
+  vertical-align: top;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (min-width: 480px) {
+  /* line 50, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+  .filter_bar .search_binder {
+    width: 33%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 50, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+  .filter_bar .search_binder {
+    width: 35%;
+    margin-right: 1%;
+    max-width: 350px;
+  }
+}
+/* line 68, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+.filter_bar input.search_field {
+  width: 100%;
+}
+/* line 71, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+.filter_bar select {
+  position: relative;
+  padding: .5em 2em .5em 1em;
+  font-size: 16px;
+  border: 0;
+  border-radius: 4px;
+  height: 40px;
+  vertical-align: middle;
+  color: #e6e6e6;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  -moz-appearance: none;
+  background: black url("/assets/arrows_select_box@2x.png") no-repeat;
+  background-position: right 13px top 10px;
+  background-size: 9px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  max-width: 304px;
+  text-transform: capitalize;
+  margin: 0;
+  float: none;
+  height: 57px;
+  background-position: right 17px center;
+  border-right: 2px solid #383838;
+  width: 52%;
+}
+/* line 127, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mixins.scss */
+.filter_bar select::-ms-expand {
+  display: none;
+}
+/* line 130, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mixins.scss */
+.filter_bar select option {
+  padding: 0.5em 1em;
+}
+@media screen and (min-width: 480px) {
+  /* line 71, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+  .filter_bar select {
+    width: 40%;
+    max-width: 284px;
+  }
+}
+@media screen and (min-width: 480px) {
+  /* line 71, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+  .filter_bar select {
+    width: 30%;
+    max-width: 284px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 71, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+  .filter_bar select {
+    height: 80px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 71, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+  .filter_bar select {
+    width: 30%;
+    max-width: 284px;
+  }
+}
+/* line 98, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+#grid_view .filter_bar select {
+  width: 50%;
+}
+@media screen and (min-width: 480px) {
+  /* line 98, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+  #grid_view .filter_bar select {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 98, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+  #grid_view .filter_bar select {
+    width: 30%;
+    max-width: 284px;
+  }
+}
+/* line 111, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+.filter_bar .search_error {
+  display: none;
+  background-color: #396aa2;
+  padding: 1em;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 22px);
+}
+/* line 67, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mixins.scss */
+.filter_bar .search_error:after {
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-top-color: #396aa2;
+  border-width: 15px;
+  margin-left: -15px;
+  border-top-color: transparent;
+  border-bottom-color: #396aa2;
+  top: -30px;
+}
+/* line 123, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+.filter_bar header {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+}
+@media screen and (min-width: 600px) {
+  /* line 123, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+  .filter_bar header {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 123, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+  .filter_bar header {
+    display: none;
+  }
+}
+/* line 137, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+.filter_bar .arrow_box {
+  display: inline-block;
+  position: absolute;
+  padding: 4px;
+  cursor: pointer;
+  right: 0;
+  bottom: 7px;
+  float: none;
+  transition: all .2s;
+}
+@media screen and (min-width: 600px) {
+  /* line 137, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+  .filter_bar .arrow_box {
+    text-align: center;
+  }
+}
+/* line 149, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+.filter_bar .arrow_box.rotate_up {
+  transform: rotate(180deg);
+}
+/* line 153, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+.filter_bar .arrow_box.rotate_right {
+  transform: rotate(270deg);
+}
+/* line 157, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+.filter_bar .arrow_box.rotate_left {
+  transform: rotate(90deg);
+}
+/* line 161, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_filter_bar.scss */
+.filter_bar .arrow_box .arrow_down {
+  display: block;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #8597B1;
+}
+
+/*
+*   _forms
+*
+*   %form_field represents text input fields with iconic submit button
+*/
+/*
+from the photoshop file,
+form container box color is #c1c1c1;
+from the photoshop file form border color is #a7a8a8; // the variable is: $form_border_color
+*/
+/* line 13, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_forms.scss */
+.overlay_search, .section_search {
+  color: white;
+  display: inline-block;
+  position: relative;
+}
+/* line 17, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_forms.scss */
+.overlay_search .search_field, .section_search .search_field {
+  color: white;
+  background-color: #262626;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  height: 40px;
+  padding-left: 1.1em;
+  padding-right: 40px;
+  width: 155px;
+}
+/* line 28, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_forms.scss */
+.overlay_search .search_field:focus, .section_search .search_field:focus {
+  background-color: #2e2e2e;
+}
+/* line 9, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_utils.scss */
+.overlay_search .search_field ::-webkit-input-placeholder, .section_search .search_field ::-webkit-input-placeholder {
+  color: gray;
+  -webkit-font-smoothing: antialiased;
+  opacity: 1 !important;
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 10, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_utils.scss */
+.overlay_search .search_field :-moz-placeholder, .section_search .search_field :-moz-placeholder {
+  color: gray;
+  -webkit-font-smoothing: antialiased;
+  opacity: 1 !important;
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 11, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_utils.scss */
+.overlay_search .search_field ::-moz-placeholder, .section_search .search_field ::-moz-placeholder {
+  color: gray;
+  -webkit-font-smoothing: antialiased;
+  opacity: 1 !important;
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 12, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_utils.scss */
+.overlay_search .search_field :-ms-input-placeholder, .section_search .search_field :-ms-input-placeholder {
+  color: gray;
+  -webkit-font-smoothing: antialiased;
+  opacity: 1 !important;
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 38, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_forms.scss */
+.overlay_search .search_submit, .section_search .search_submit {
+  padding: 0;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: url("/assets/images_of_change/ui_sprite@2x.png") -132px -55px;
+  background-size: 300px;
+  position: absolute;
+  right: 2px;
+  top: -1px;
+  border: none;
+  margin-left: -44px;
+}
+/* line 101, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_mixins.scss */
+.no-touchevents .overlay_search .search_submit:hover, .no-touchevents .section_search .search_submit:hover, .overlay_search .search_submit.active, .section_search .search_submit.active {
+  background: url("/assets/images_of_change/ui_sprite@2x.png") -132px -5px;
+  background-size: 300px;
+}
+
+/* END PLACEHOLDERS */
+/* line 70, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_forms.scss */
+form.nav_search input:-webkit-autofill, form.overlay_search input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #989898 inset;
+  -webkit-text-fill-color: white !important;
+}
+
+/* line 79, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_forms.scss */
+.overlay_search .search_field {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+/* line 9, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_utils.scss */
+.overlay_search .search_field ::-webkit-input-placeholder {
+  color: white;
+}
+/* line 10, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_utils.scss */
+.overlay_search .search_field :-moz-placeholder {
+  color: white;
+}
+/* line 11, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_utils.scss */
+.overlay_search .search_field ::-moz-placeholder {
+  color: white;
+}
+/* line 12, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_utils.scss */
+.overlay_search .search_field :-ms-input-placeholder {
+  color: white;
+}
+/* line 86, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_forms.scss */
+.overlay_search .search_submit {
+  padding: 0;
+  cursor: pointer;
+}
+/* line 115, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_button.scss */
+.overlay_search .search_submit .icon {
+  width: 42px;
+  height: 42px;
+  background: url("/assets/images_of_change/ui_sprite@2x.png") -131px -5px;
+  background-size: 200px;
+}
+/* line 122, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_button.scss */
+.overlay_search .search_submit:hover .icon, .overlay_search .search_submit.active .icon {
+  background: url("/assets/images_of_change/ui_sprite@2x.png") -131px -5px;
+  background-size: 200px;
+}
+
+/* recaptcha overrides */
+@media screen and (max-width: 480px) {
+  /* line 99, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_forms.scss */
+  #recaptcha_widget_div {
+    overflow: hidden;
+  }
+  /* line 103, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_forms.scss */
+  #recaptcha_widget_div #recaptcha_area {
+    margin: 0 auto;
+  }
+}
+
+/* form page titles and areas. Out side the form itself, but related */
+/* line 116, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_forms.scss */
+.event_location, .event_date {
+  margin-bottom: 1em;
+}
+
+/* line 5, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_ie.scss */
+.ie9 .filter_bar select {
+  background-image: none;
+}
+
+/* line 11, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/_ie.scss */
+html.-ms- {
+  width: 100%;
+}
+
+/* line 33, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after, .twentytwenty-vertical .twentytwenty-handle:before, .twentytwenty-vertical .twentytwenty-handle:after {
+  content: " ";
+  display: block;
+  background: white;
+  position: absolute;
+  z-index: 30;
+  -moz-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+  -webkit-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+  box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+}
+
+/* line 42, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after {
+  width: 3px;
+  height: 9999px;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+/* line 49, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-vertical .twentytwenty-handle:before, .twentytwenty-vertical .twentytwenty-handle:after {
+  width: 9999px;
+  height: 3px;
+  top: 50%;
+  margin-top: -1.5px;
+}
+
+/* line 56, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-before-label, .twentytwenty-after-label, .twentytwenty-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 63, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-before-label, .twentytwenty-after-label, .twentytwenty-overlay {
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+/* line 65, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-before-label, .twentytwenty-after-label {
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+/* line 67, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-before-label:before, .twentytwenty-after-label:before {
+  color: white;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+}
+
+/* line 73, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-before-label:before, .twentytwenty-after-label:before {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  line-height: 38px;
+  padding: 0 20px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 81, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-horizontal .twentytwenty-before-label:before, .twentytwenty-horizontal .twentytwenty-after-label:before {
+  top: 50%;
+  margin-top: -19px;
+}
+
+/* line 86, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-vertical .twentytwenty-before-label:before, .twentytwenty-vertical .twentytwenty-after-label:before {
+  left: 50%;
+  margin-left: -45px;
+  text-align: center;
+  width: 90px;
+}
+
+/* line 93, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-left-arrow, .twentytwenty-right-arrow, .twentytwenty-up-arrow, .twentytwenty-down-arrow {
+  width: 0;
+  height: 0;
+  border: 6px inset transparent;
+  position: absolute;
+}
+
+/* line 100, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-left-arrow, .twentytwenty-right-arrow {
+  top: 50%;
+  margin-top: -6px;
+}
+
+/* line 106, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-up-arrow, .twentytwenty-down-arrow {
+  left: 50%;
+  margin-left: -6px;
+}
+
+/* line 113, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-container {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+/* line 121, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-container img {
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  display: block;
+}
+/* line 128, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-container.active .twentytwenty-overlay,
+.twentytwenty-container * {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 138, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-before-label {
+  opacity: 0;
+}
+/* line 144, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-before-label:before {
+  content: "Before";
+}
+
+/* line 152, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-after-label {
+  opacity: 0;
+}
+/* line 158, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-after-label:before {
+  content: "After";
+}
+
+/* line 168, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-horizontal .twentytwenty-before-label:before {
+  left: 10px;
+}
+
+/* line 176, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-horizontal .twentytwenty-after-label:before {
+  right: 10px;
+}
+
+/* line 185, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-vertical .twentytwenty-before-label:before {
+  top: 10px;
+}
+
+/* line 193, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-vertical .twentytwenty-after-label:before {
+  bottom: 10px;
+}
+
+/* line 200, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-overlay {
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  -webkit-transition-property: background;
+  transition-property: background;
+  background: transparent;
+  z-index: 25;
+}
+
+/* line 214, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-before {
+  z-index: 20;
+}
+
+/* line 215, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-after {
+  z-index: 10;
+}
+
+/* line 218, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-handle {
+  height: 38px;
+  width: 38px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -22px;
+  margin-top: -22px;
+  border: 3px solid white;
+  -moz-border-radius: 1000px;
+  -webkit-border-radius: 1000px;
+  border-radius: 1000px;
+  -moz-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+  -webkit-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+  box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+  z-index: 40;
+  cursor: pointer;
+}
+
+/* line 236, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-horizontal .twentytwenty-handle:before {
+  bottom: 50%;
+  margin-bottom: 22px;
+  -moz-box-shadow: 0 3px 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+  -webkit-box-shadow: 0 3px 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+  box-shadow: 0 3px 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+}
+/* line 244, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-horizontal .twentytwenty-handle:after {
+  top: 50%;
+  margin-top: 22px;
+  -moz-box-shadow: 0 -3px 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+  -webkit-box-shadow: 0 -3px 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+  box-shadow: 0 -3px 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+}
+
+/* line 256, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-vertical .twentytwenty-handle:before {
+  left: 50%;
+  margin-left: 22px;
+  -moz-box-shadow: 3px 0 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+  -webkit-box-shadow: 3px 0 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+  box-shadow: 3px 0 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+}
+/* line 264, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-vertical .twentytwenty-handle:after {
+  right: 50%;
+  margin-right: 22px;
+  -moz-box-shadow: -3px 0 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+  -webkit-box-shadow: -3px 0 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+  box-shadow: -3px 0 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+}
+
+/* line 274, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-left-arrow {
+  border-right: 6px solid white;
+  left: 50%;
+  margin-left: -17px;
+}
+
+/* line 282, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-right-arrow {
+  border-left: 6px solid white;
+  right: 50%;
+  margin-right: -17px;
+}
+
+/* line 290, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-up-arrow {
+  border-bottom: 6px solid white;
+  top: 50%;
+  margin-top: -17px;
+}
+
+/* line 298, /websites/jpl/rails/climate-prod/app/assets/stylesheets/public/images_of_change/vendor/twentytwenty.scss */
+.twentytwenty-down-arrow {
+  border-top: 6px solid white;
+  bottom: 50%;
+  margin-bottom: -17px;
+}

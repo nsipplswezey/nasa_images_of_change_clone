@@ -1,0 +1,7 @@
+index.html is just a json file
+this is a hack, to mock the api endpoint
+using the same static file server
+
+http://climate.nasa.gov/api/v1/gallery_images/?order=image_date+desc%2C+created_at+desc&per_page=500
+
+http://localhost:8000/api/v1/gallery_images/
